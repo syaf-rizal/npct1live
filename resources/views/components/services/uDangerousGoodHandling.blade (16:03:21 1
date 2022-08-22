@@ -1,0 +1,74 @@
+@extends('components.containers.appLanding')
+@section('pageTitle', $title)
+@section('content')
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Dangerous Goods (DG) Handling</h1>
+                <h6><a href="{{ url('/') }}">Home</a> <i class="fas fa-angle-right"></i> Our Services </h6>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="clearfix">&nbsp;</div>
+<section class="service-details">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xm-12 content">
+                <h1>Dangerous Goods (DG) Handling</h1>
+                <p style="text-align: justify;">NPCT1 had dedicated DG Yard Block with total of 80 groun slots</p>
+                <div class="con-handling-div-img">
+                    <img src="{{ asset('images/DGeditedsmall_2.png') }}">
+                </div>
+                <p>To ensure safety and minimize the risk in handling DG at NPCT1, these regulations have to be adhered strictly by the customer:</p>
+                <ol style="line-height: 2;">
+                    <li style="text-align: left;">Shipping lines with import activity are required to submit DG list, including UN Number and MSDS (Material Safety Data Sheet), to the Commercial Department and Operations Department, along with the submission of CVIA.</li>
+                    <li style="text-align: left;">Shipping lines with export activity are required to submit DG list, including UN Number and MSDS (Material Safety Data Sheet) electronically (COPARN), to the Operations Department and Yard Planning Department.</li>
+                    <li style="text-align: left;">Exporters shipping dangerous goods through the Terminal are required to attach Export Approval (PE), which contains information on container number and cargo height, during application for Terminal Gate Pass.</li>
+                    <li style="text-align: left;">Container carrying Dangerous Goods (DG) must be labeled clearly at all corners of the container.</li>
+                    <li style="text-align: left;">Maximum storage period in terminals for containers with dangerous goods (FCL, LCL or Transshipment) calculated based on Vessel Estimated Time of Berthing (ETB). The details are as follows:
+                        <ol type="a">
+                            <li>Import Containers contains of dangerous goods
+                                <ul>
+                                    <li>Class 1 and 7 Direct Driving/Truck Losing</li>
+                                    <li>Class 2.1; 2.3; 5.1; 5.2; 6.1 Maximum 24 hours</li>
+                                    <li>Class 2.2; 3; 4; 5; 6.2; 8; 9 Maximum 72 hours</li>
+                                </ul>
+                            </li>
+                            <li>Export Containers contains of dangerous goods
+                                <ul>
+                                    <li>Class 1 and 7 Direct Driving/Truck Losing</li>
+                                    <li>Class 2.1; 2.3; 5.1; 5.2; 6.1 Maximum 24 hours</li>
+                                    <li>Class 2.2; 3; 4; 5; 6.2; 8; 9 Maximum 96 hours</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>The handling of dangerous goods containers shall be set as follows:
+                        <ol type="a">
+                            <li style="text-align: left;">Import containers stacked in the Terminal which have exceeded the maximum storage period will be relocated to an appointed Temporary Storage Depot (TPS) and all cost incurred shall be the responsibility of cargo owners.</li>
+                            <li style="text-align: left;">If there is a delay due to Working / National Holiday, such Import container will be relocated after the holiday.</li>
+                            <li style="text-align: left;">Import containers which have to be delivered directly, but could not be delivered directly until the Loading / Unloading activity has finished, shall be loaded back to the vessel and shifting cost for the activity mentioned above shall be the responsibility of shipping lines.</li>
+                            <li style="text-align: left;">Export containers stacked in the Terminal that have not been loaded on the vessel due to vessel delay or loading cancellation shall be subjected to additional costs as follows:
+                                <ul>
+                                    <li>IDR 444,000 per 20' container</li>
+                                    <li>IDR 606,000 per 40' container</li>
+                                </ul>
+                            </li>
+                            <li style="text-align: left;">Containers without labels as set by the IMDG Code will be charged 200% additional cost of the handling and storages tariffs.</li>
+                            <li style="text-align: left;">Containers which have more than 1 remark / label shall be categorized according to the highest remark / label level found on the containers.</li>
+                            <li style="text-align: left;">Shipping lines / cargo owners are wholly responsible for any risks and claims that may occur if their containers, due to specific characteristics of the cargo damage or affect surrounding containers.</li>
+                            <li style="text-align: left;">Additional cost at 200% of the handling and storage tariffs will be charged to shipping line/cargo owner in cases where containers do not match with the notification letters.</li>
+                            <li style="text-align: left;">Physical inspection (Behandle) based on SPJM for containers containing dangerous cargo shall be conducted outside NPCT1 area.</li>
+                            <li style="text-align: left;">Fumigation is not allowed at NPCT1 area and should be done after stuffing in warehouse. Label markings must be put on the fumigated containers. Additional 200% cost of handling and storage tariffs will be charged if this regulation is violated.</li>
+                            <li style="text-align: left;">Containers containing dangerous goods in accordance with International Maritime Dangerous Goods Code (IMDG Code) besides class 1 and 7, are subject to additional charges of 100% (one hundred percent) of the basic rate services stacking containers.</li>
+                        </ol>
+                    </li>
+                </ol>
+                <h1><a href="#">Download SOP Dangerous Goods (DG) Handling</a></h1>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
